@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>igoris.io</title>
+    <link>https://igoris.io/</link>
+    <description>Recent content on igoris.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Igor Ishchenko 2019</copyright>
+    <lastBuildDate>Tue, 24 Dec 2019 17:28:37 +0200</lastBuildDate>
+    
+	<atom:link href="https://igoris.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reusing an argument from the previous command</title>
+      <link>https://igoris.io/posts/reuse-cmd-argument/</link>
+      <pubDate>Tue, 24 Dec 2019 17:28:37 +0200</pubDate>
+      
+      <guid>https://igoris.io/posts/reuse-cmd-argument/</guid>
+      <description>Quite often you need to call several commands with the same argument one after another. The most common example is creating a folder and then switching into it. This can be done with the help of !$ or $_.
+The former is substituted with the last word of the previous command as recorded in history and the latter is a shell parameter that expands to the last argument of the previous command:</description>
+    </item>
+    
+  </channel>
+</rss>
