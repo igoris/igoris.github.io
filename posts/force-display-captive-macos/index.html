@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Reusing an argument from the previous command</title>
-  <meta property="og:title" content="Reusing an argument from the previous command" />
-  <meta name="twitter:title" content="Reusing an argument from the previous command" />
+  <title>Force Display Captive Mac OS</title>
+  <meta property="og:title" content="Force Display Captive Mac OS" />
+  <meta name="twitter:title" content="Force Display Captive Mac OS" />
   
 
   
 
   <meta name="author" content=""/>
   <meta property="og:site_name" content="igoris.io" />
-  <meta property="og:url" content="https://igoris.io/posts/reuse-cmd-argument/" />
+  <meta property="og:url" content="https://igoris.io/posts/force-display-captive-macos/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -48,12 +48,12 @@
 
 <article class="p-article">
   <header>
-    <h1>Reusing an argument from the previous command</h1>
+    <h1>Force Display Captive Mac OS</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2019-12-24T17:28:37&#43;02:00">
-          Dec 24, 2019
+        <time datetime="2019-12-27T15:40:10&#43;01:00">
+          Dec 27, 2019
         </time>
       </div>
       
@@ -61,19 +61,8 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <p>Quite often you need to call several commands with the same argument one after another. The most common example is creating a folder and then switching into it. This can be done with the help of <code>!$</code> or <code>$_</code>.</p>
-<p>The former is substituted with the last <em>word</em> of the previous command as recorded in history and the latter is a shell parameter that expands to the last <em>argument</em> of the previous command:</p>
-<pre><code>date -u &gt; now.txt
-echo !$
-date -u &gt; now.txt
-echo $_
-</code></pre><p>Will print</p>
-<pre><code>now.txt
--u
-</code></pre><p>They behave indentically if you don't have any redirections, pipes, etc. So, in our example with creating a folder and switching into it you can use either version:</p>
-<pre><code>mkdir tmp &amp;&amp; cd !$ 
-or
-mkdir tmp &amp;&amp; cd $_
+    <p>Sometimes, after connecting to a WiFi network with a captive login Mac OS doesn't show the login page. Depending on the captive configuration, it can be mitigated by opening a non-https page. The request will be captured and you will be redirected to the login page. However, it doesn't always work. In this case you can force display the MacOS captive login screen with this command:</p>
+<pre><code>open /System/Library/CoreServices/Captive\ Network\ Assistant.app
 </code></pre>
   </section>
   <footer>
@@ -82,11 +71,11 @@ mkdir tmp &amp;&amp; cd $_
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://igoris.io/posts/force-display-captive-macos/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
+          <a href="https://igoris.io/posts/reuse-cmd-argument/">Older</a>
           
         </div>
       </div>

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Igor Ishchenko 2019</copyright>
-    <lastBuildDate>Tue, 24 Dec 2019 17:28:37 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2019 15:40:10 +0100</lastBuildDate>
     
 	<atom:link href="https://igoris.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Force Display Captive Mac OS</title>
+      <link>https://igoris.io/posts/force-display-captive-macos/</link>
+      <pubDate>Fri, 27 Dec 2019 15:40:10 +0100</pubDate>
+      
+      <guid>https://igoris.io/posts/force-display-captive-macos/</guid>
+      <description>Sometimes, after connecting to a WiFi network with a captive login Mac OS doesn&#39;t show the login page. Depending on the captive configuration, it can be mitigated by opening a non-https page. The request will be captured and you will be redirected to the login page. However, it doesn&#39;t always work. In this case you can force display the MacOS captive login screen with this command:
+open /System/Library/CoreServices/Captive\ Network\ Assistant.app </description>
+    </item>
     
     <item>
       <title>Reusing an argument from the previous command</title>
